@@ -1,0 +1,236 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+}
+
+
+
+
+/************ INICIO HEADER ***********/
+
+
+header {
+    height: 22.9rem;
+    background-image: url(../img/fondoLogo.jpg);
+    grid-area: header;
+}
+
+.logoHeader {
+    height: 17rem;
+    text-align: center;
+}
+
+.logoHeader img {
+    height: 15rem;
+    border-radius: 2rem;
+}
+
+.botonera {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.botonera li {
+    display: inline;
+    margin-right: 4rem;
+    border: 0.2rem #3D2418 solid;
+    padding: 1.5rem;
+    background-color: #F8E9DA;
+}
+
+.botonera li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #3D2418;
+}
+
+.botonera li:hover {
+    background-color: #3D2418;
+    border: 0.2rem #F8E9DA dotted;
+}
+
+.botonera li a:hover {
+    color: #F8E9DA;
+}
+
+
+/********** FIN HEADER **********/
+
+main {
+    grid-area: main;
+}
+
+main div { 
+    height: 50rem;
+    width: 100%;
+}
+
+.barraSeparadora {
+    height: 1.2rem;
+    width: 90%;
+    background-color: #F8E9DA;
+    margin: 3rem 3rem 3rem 7rem;
+    border-radius: 3rem;
+    border: #3D2418 0.2rem dashed ;
+    grid-area: barra;
+}
+
+.sectionA {
+    height: 50rem;
+    width: 50%;
+    position: relative;
+    float: left;
+}
+
+.sectionA p {
+    font-size: 1.7rem;
+    text-align: center;
+    position: relative;
+    float: left;
+}
+
+.sectionB {
+    grid-area: sectionB;
+}
+
+.sectionB img {
+    display: inline-block;
+    height: 50rem;
+    width: 50%;
+}
+
+
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #332014;
+    border: #332014 0.2rem solid;
+    grid-area: h1;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    height: 60rem;
+    grid-area: menus;
+}
+
+
+
+
+
+
+
+
+/********** INICIO FOOTER **********/
+
+
+footer {
+    height: 14rem;
+    background-color: #332014;
+    grid-area: footer;
+}
+
+.logoFooter {
+    display: inline-block;
+}
+
+.logoFooter img{
+    height: 14rem;
+    border-radius: 1rem;
+}
+
+footer nav {
+    display: inline-block;
+}
+
+.iconosRedes li {
+    display: inline-block;
+    margin-right: 4rem;
+}
+
+.iconosRedes li a img {
+    height: 4rem;
+}
+
+
+/********** FIN FOOTER ***********/
+
+
+
+@media(max-width: 768px) {
+
+
+    .gridPadre {
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "header header"
+        "main main"
+        "barra barra"
+        "sectionA sectionA"
+        "sectionB sectionB"
+        "footer footer"
+        ;
+    }
+
+    .botonera li {
+        padding: 0.1rem;
+    }
+
+    .sectionA {
+        display: none;
+    }
+
+    .sectionB {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sectionB img {
+        width: 100%;
+    }
+
+    .barraSeparadora {
+        margin-left: 3rem;
+    }
+
+    .menu img{
+        width: 100%;
+    }
+
+}
+
+@media(min-width: 768px) and (max-width: 1024px) {
+
+    .gridPadre {
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "barra barra barra"
+        "sectionA sectionA sectionB"
+        "sectionA sectionA sectionB"
+        "footer footer footer"
+        ;
+    }
+
+    .sectionA {
+        display: none;
+    }
+
+    .sectionB {
+        display: flex;
+        justify-content: center;
+        margin-right: 22rem;
+    }
+
+    .sectionB img{
+        width: 100%;
+    }
+
+}
