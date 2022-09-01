@@ -1,0 +1,23 @@
+@import "variables", "header", "secciones", "footer", "media";
+
+
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+}
+
+
+main {
+    grid-area: main;
+
+    div { 
+        height: 50rem;
+        width: 100%;
+    }
+}
+

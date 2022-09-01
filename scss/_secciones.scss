@@ -1,0 +1,51 @@
+.barraSeparadora {
+    height: 1.2rem;
+    width: 90%;
+    background-color: $color-principal;
+    margin: 3rem 3rem 3rem 7rem;
+    border-radius: 3rem;
+    border: $color-secundario 0.2rem dashed ;
+    grid-area: barra;
+}
+
+.sectionA {
+    height: 50rem;
+    width: 50%;
+    position: relative;
+    float: left;
+
+    p {
+        font-size: 1.7rem;
+        text-align: center;
+        position: relative;
+        float: left;
+    }
+}
+
+
+.sectionB {
+    grid-area: sectionB;
+
+    img {
+        display: inline-block;
+        height: 50rem;
+        width: 50%;
+    }
+}
+
+//Seccion MENU.
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: $color-secundario;
+    border: $color-secundario 0.2rem solid;
+    grid-area: h1;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    height: 60rem;
+    grid-area: menus;
+}

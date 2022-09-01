@@ -1,0 +1,43 @@
+header {
+    height: 22.9rem;
+    background-image: url(../img/fondoLogo.jpg);
+    grid-area: header;
+
+    .logoHeader {
+        height: 17rem;
+        text-align: center;
+
+        img {
+            height: 15rem;
+            border-radius: 2rem;
+        }
+    }
+
+    .botonera {
+        font-size: 2rem;
+        text-align: center;
+
+        li {
+            display: inline;
+            margin-right: 4rem;
+            border: 0.2rem $color-secundario solid;
+            padding: 1.5rem;
+            background-color: $color-principal;
+
+            &:hover {
+                background-color: $color-secundario;
+                border: 0.2rem $color-principal dotted;
+            }
+            
+            a {
+                display: inline-block;
+                text-decoration: none;
+                color: $color-secundario;
+
+                &:hover {
+                    color: $color-principal;
+                }
+            }            
+        }
+    }
+}
