@@ -1,3 +1,17 @@
 $color-principal: #F8E9DA;
 
 $color-secundario: #3D2418;
+
+
+//MAPS
+$imagenFooter: (altura: 14rem, borde: 1rem);
+
+//MIXIN
+@mixin botones {
+    margin-right: 4rem;
+    border: 0.2rem $color-secundario solid;
+    padding: 1.5rem;
+    background-color: $color-principal;
+}
+
+

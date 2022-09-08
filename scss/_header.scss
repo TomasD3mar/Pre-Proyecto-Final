@@ -19,10 +19,7 @@ header {
 
         li {
             display: inline;
-            margin-right: 4rem;
-            border: 0.2rem $color-secundario solid;
-            padding: 1.5rem;
-            background-color: $color-principal;
+            @include botones;
 
             &:hover {
                 background-color: $color-secundario;

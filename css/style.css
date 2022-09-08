@@ -78,7 +78,7 @@ footer {
       border-radius: 1rem; }
   footer nav {
     display: inline-block; }
-    footer nav .iconosRedes li {
+    footer nav .iconosRedes li, footer nav .iconosRedes li a img li {
       display: inline-block;
       margin-right: 4rem; }
       footer nav .iconosRedes li a img {

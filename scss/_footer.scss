@@ -7,8 +7,8 @@ footer {
         display: inline-block;
 
         img{
-            height: 14rem;
-            border-radius: 1rem;
+            height: map-get($imagenFooter , altura);
+            border-radius: map-get($imagenFooter, borde);
         }
     }
 
@@ -21,6 +21,7 @@ footer {
 
             a img {
                 height: 4rem;
+                @extend .iconosRedes;
             }
         }
     }
