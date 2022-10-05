@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../css/style.css">
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- FAVICOM -->
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -27,10 +29,25 @@
     </header>
 
     <main>
-        <br><br><br><br><br><br>
-        <h1>PROXIMAMENTE LOGIN</h1>
-        <br><br><br><br><br><br>
+        <h1>LOGIN</h1>
     </main>
+
+    <form class="login">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Direccion de Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">No compartiremos tu direccion de email con nadie</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Verificar</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Log in</button>
+      </form>
 
     <footer>
         <div class="logoFooter"><img src="../img/logoFooter.jpg" alt="Logo como en casa"></div>
